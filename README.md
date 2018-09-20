@@ -5,8 +5,5 @@ For Windows:
 This was made on Windows using Microsoft Visual Studio, so I found it best to run it from there.
 
 For Linux:
-To compile:
-- Type in "g++ -o <i>outputfilename</i> <i>inputfilename.cpp</i>"
-
-To run:
-- Type in "./<i>outputfilename</i>"
+- Type in "g++ -o <i>outputfilename</i> <i>inputfilename.cpp</i>" to compile
+- Type in "./<i>outputfilename</i>" to run

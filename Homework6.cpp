@@ -33,18 +33,18 @@ int main()
 	time_t timer;
 	char test[133];
 	//creating a 2 dimensional array to store answer strings
-	char *array[] = { 
-		"C:\\Public\\Public Documents\\Hwk4\\AnythingIsPossible.wav", 
-		"C:\\Public\\Public Documents\\Hwk4\\Definitely.wav", 
-		"C:\\Public\\Public Documents\\Hwk4\\DefinitelyNot.wav", 
-		"C:\\Public\\Public Documents\\Hwk4\\IThinkItIsLikeLy.wav", 
-		"C:\\Public\\Public Documents\\Hwk4\\IThinkNot.wav",
-		"C:\\Public\\Public Documents\\Hwk4\\IThinkThatTimeWillTell.wav", 
-		"C:\\Public\\Public Documents\\Hwk4\\ItIsNotCertain.wav", 
-		"C:\\Public\\Public Documents\\Hwk4\\ItIsTooSoonToTell.wav", 
-		"C:\\Public\\Public Documents\\Hwk4\\MaybeNot.wav", 
-		"C:\\Public\\Public Documents\\Hwk4\\WithoutADoubt.wav", 
-		"C:\\Public\\Public Documents\\Hwk4\\YouMustBeJoking.wav" };
+	char *array[] = {
+		"AnythingIsPossible.wav",
+		"Definitely.wav",
+		"DefinitelyNot.wav",
+		"IThinkItIsLikeLy.wav",
+		"IThinkNot.wav",
+		"IThinkThatTimeWillTell.wav",
+		"ItIsNotCertain.wav",
+		"ItIsTooSoonToTell.wav",
+		"MaybeNot.wav",
+		"WithoutADoubt.wav",
+		"YouMustBeJoking.wav" };
 
 	num = time(&timer);
 
@@ -57,12 +57,11 @@ int main()
 		mov edx, 0					//clears edx
 		mov ebx, 11
 		div ebx						//divides eax by 11 and get the remainder, or mod eax by 11
-		movzx randVal, edx 
+		movzx randVal, edx
 	}
-	
+
 	strcpy(test, array[randVal]);
 	cout << test << "\n";
 	PlaySounda(test, NULL, SND_FILENAME);
 	return 0;
 }
-
